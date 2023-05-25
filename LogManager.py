@@ -25,6 +25,7 @@ class LogManager:
         self.__log_level = log_level
         self.__log_level = self.__refine_level()
         self.__content = content
+        self.log()
 
     def log(self):
         msg = f'[{datetime.now()}] {self.__log_level}: {self.__content}'
