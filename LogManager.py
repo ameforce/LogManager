@@ -3,7 +3,7 @@ import os
 
 
 class LogManager:
-    def __init__(self, log_level: int, content: str, is_print_console: bool = True):
+    def __init__(self, log_level: int = 0, content: str = '', is_print_console: bool = True):
         self.__log_level = log_level
         self.__log_level = self.__refine_level()
         self.__content = content
